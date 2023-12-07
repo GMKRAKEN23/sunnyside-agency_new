@@ -1,0 +1,253 @@
+@import 'variables';
+@import 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background: no-repeat url('../img/pictures/image-header.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+
+    .header_nav_bar {
+        @include flex-container (row, space-between, center);
+        position: relative;
+        top: 34px;
+        padding: 0 34px;
+    }
+
+    .header_menu {
+        @include media-maxwidth($sm-screen) {
+            display: none;
+        }
+
+        .burger_menu {
+            @include media-maxwidth($sm-screen) {
+                display: flex;
+            }
+        }
+    }
+
+    .header_logo {
+        font-size: 30px;
+    }
+
+    a {
+        @include font-and-color('Barlow', 18px, $font-weight-higt, $neutral-white, -0.13px);
+        margin-right: 20px;
+    }
+
+    h1 {
+        @include font-and-color('Fraunces', 56px, $font-weigth-strong, $neutral-white, 8.75px);
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    img {
+        top: 324px;
+        left: 48%;
+        position: absolute;
+    }
+}
+
+.burger_menu {
+    @include media-maxwidth($sm-screen) {
+        width: 24px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .bar {
+            background: $neutral-white;
+            width: 24px;
+            height: 2px;
+        }
+    }
+
+    display: none;
+}
+
+.section_marketing {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-maxwidth($sm-screen) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_marketing_information {
+        @include media-maxwidth($sm-screen) {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        width: 50%;
+        @include flex-container($direction: column, $justify: space-evenly, $align: center);
+        text-align: center;
+        margin: 0;
+
+        .section_title {
+            @include font-and-color('Fraunces', 40px, $font-weigth-strong, $neutral-very-dark-desaturated-blue, -0.29px);
+
+            @include media-maxwidth($sm-screen) {
+                width: 90%;
+                padding: 20px 0;
+            }
+        }
+
+        .section_paragraph {
+            @include font-and-color('Barlow', 18px, $font-weight-higt, $neutral-dark-grayish-blue, -0.13px);
+            font-size: 18px;
+            width: 70%;
+            max-width: 475px;
+        }
+
+        .section_link {
+            @include font-and-color('Fraunces', 15px, $font-weigth-strong, $neutral-color-dark-green, 1px);
+
+            @include media-maxwidth($sm-screen) {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    img {
+        width: 50%;
+
+        @include media-maxwidth($sm-screen) {
+            width: 100%;
+        }
+    }
+}
+
+.section_marketing .part_two .section_marketing_information {
+    display: inline-block;
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        display: block;
+
+    }
+
+    .section_title {
+        position: relative;
+        bottom: 35%;
+        @include font-and-color('Fraunces', 28px, $font-weigth-strong, $primary-hight-green, -0.2px);
+    }
+
+    .section_paragraph {
+        position: relative;
+        bottom: 32%;
+        left: 20%;
+        @include font-and-color('Barlow', 16px, $font-weight-higt, $primary-hight-green, -0.11px);
+    }
+}
+
+.article_title {
+    text-align: center;
+    @include font-and-color('Fraunces', 16px, $font-weigth-strong, $neutral-grayish-blue, 4px);
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.article {
+    @include media-maxwidth($sm-screen) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    aside {
+        padding: 0 20px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .aside_text,
+    .aside_autor {
+        padding: 15px 0;
+
+        @include media-maxwidth($sm-screen) {
+            padding: 20px 0;
+        }
+    }
+
+}
+
+.aside_text {
+    @include font-and-color('Barlow', 18px, $font-weight-higt, $neutral-parapgraph, -0.13px);
+}
+
+.aside_autor {
+    @include font-and-color('Fraunces', 18px, $font-weigth-strong, $neutral-color-dark-green, -0.13px);
+
+}
+
+.aside_job {
+    @include font-and-color('Barlow', 14px, $font-weight-higt, $neutral-grayish-blue, -0.01px);
+
+    @include media-maxwidth($sm-screen) {
+        padding: 0 0 20px 0;
+    }
+}
+
+.section_image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        width: 25%;
+
+        @include media-maxwidth($sm-screen) {
+            width: 50%;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    @include flex-container(column, center, center);
+    background-color: $primary-dark-moderate-cyan;
+    padding: 30px 0;
+
+    a {
+        @include font-and-color('Fraunces', 34px, $font-weigth-strong, $primary-hight-green, -0.13px);
+    }
+
+    .footer_list_information,
+    .footer_list_media {
+        display: flex;
+        margin: 30px 0;
+    }
+
+    .footer_list_information a {
+        padding: 0 30px;
+        @include font-and-color('Barlow', 18px, $font-weight-higt, #458D7E, -0.13px);
+    }
+
+    .footer_list_media {
+        width: 167px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}

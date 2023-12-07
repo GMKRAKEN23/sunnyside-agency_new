@@ -1,0 +1,20 @@
+@mixin flex-container($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font-and-color($font-family: 'Barlow', $font-size: 10px, $font-weight: 700, $color: black, $letter-spacing: 10px) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin media-maxwidth($screensize){
+    @media (max-width: $screensize) {
+       @content;
+    }
+}

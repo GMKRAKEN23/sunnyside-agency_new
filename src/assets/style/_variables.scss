@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Besley:ital@0;1&family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Besley:ital@0;1&family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap');
+
+// color
+$primary-soft-red : hsl(7, 99%, 70%);
+$primary-yellow : hsl(51, 100%, 49%);
+$primar-dark-desaturated: hsl(180, 100%, 50%);
+$primary-dark-blue : hsl(198, 62%, 26%);
+$primary-hight-green : hsl(167, 40%, 24%);
+$primary-dark-moderate-cyan : hsl(168, 70%, 75%);
+
+$neutral-very-dark-desaturated-blue : hsl(211, 26%, 19%);
+$neutral-very-dark-grayish-blue: hsl(210, 9%, 38%);
+$neutral-dark-grayish-blue: hsl(232, 10%, 55%);
+$neutral-grayish-blue: hsl(210, 4%, 67%);
+$neutral-white:  hsl(0, 0%, 100%);
+$neutral-parapgraph :hsla(213, 9%, 39%, 1);
+$neutral-color-dark-green: hsla(212, 27%, 19%, 1);
+
+// font-weight
+$font-weight-higt: 600;
+$font-weight-medium: 700;
+$font-weigth-strong: 900;
+
+// font-size
+$font-size: 18px;
+
+// font-family
+$font-family_fraunces: 'Fraunces';
+$font-family_barlow: 'Barlow';
+
+$sm-screen: "600px";
