@@ -87,10 +87,9 @@ header {
         @include media-maxwidth($sm-screen) {
             width: 100%;
             text-align: center;
-            padding: 20px;
+     
         }
-
-        width: 50%;
+        width: 40%;
         @include flex-container($direction: column, $justify: space-evenly, $align: center);
         text-align: center;
         margin: 0;
@@ -121,8 +120,6 @@ header {
     }
 
     img {
-        width: 50%;
-
         @include media-maxwidth($sm-screen) {
             width: 100%;
         }
@@ -131,25 +128,24 @@ header {
 
 .section_marketing .part_two .section_marketing_information {
     display: inline-block;
-
     img {
         width: 100%;
         height: 100%;
         max-height: 600px;
         display: block;
-
     }
 
     .section_title {
         position: relative;
-        bottom: 35%;
+
+        left: 5%;
         @include font-and-color('Fraunces', 28px, $font-weigth-strong, $primary-hight-green, -0.2px);
     }
 
     .section_paragraph {
         position: relative;
         bottom: 32%;
-        left: 20%;
+        left: 15%;
         @include font-and-color('Barlow', 16px, $font-weight-higt, $primary-hight-green, -0.11px);
     }
 }

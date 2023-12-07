@@ -88,7 +88,7 @@ header img {
   }
 }
 .section_marketing .section_marketing_information {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -100,7 +100,6 @@ header img {
   .section_marketing .section_marketing_information {
     width: 100%;
     text-align: center;
-    padding: 20px;
   }
 }
 .section_marketing .section_marketing_information .section_title {
@@ -138,9 +137,6 @@ header img {
     padding: 20px 0;
   }
 }
-.section_marketing img {
-  width: 50%;
-}
 @media (max-width: 600px) {
   .section_marketing img {
     width: 100%;
@@ -158,7 +154,7 @@ header img {
 }
 .section_marketing .part_two .section_marketing_information .section_title {
   position: relative;
-  bottom: 35%;
+  left: 5%;
   font-family: "Fraunces";
   font-size: 28px;
   font-weight: 900;
@@ -168,7 +164,7 @@ header img {
 .section_marketing .part_two .section_marketing_information .section_paragraph {
   position: relative;
   bottom: 32%;
-  left: 20%;
+  left: 15%;
   font-family: "Barlow";
   font-size: 16px;
   font-weight: 600;
